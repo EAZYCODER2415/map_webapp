@@ -12,15 +12,15 @@
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
+    </head>
+    <body>
+        <div id="map" style="width: 100%;"></div>
         <script>
             var map = L.map('map').setView([18.79569, 98.96272], 10);
-            var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 18,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
         </script>
-    </head>
-    <body>
-        <div id="map" style="width: 100%;"></div>
     </body>
 </html>
